@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kyaari Lounge & Skydiner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">Kyaari</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="reserve-btn" onclick="openBookingForm()">
+            Reserve Table
+        </button>
+
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+    <source src="images/hero-video.mp4" type="video/mp4">
+</video>
+
+        <div class="overlay">
+
+            <h1>Kyaari Lounge & Skydiner</h1>
+
+            <p>Premium Rooftop Dining Experience</p>
+
+        </div>
+
+    </div>
+    <section class="rating-card">
+
+<div class="rating-box">
+⭐ 4.7 Google Rating
+<br>
+1400+ Happy Customers
+</div>
+
+</section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about hidden">
+
+        <h2>About Kyaari</h2>
+
+        <p>
+            Kyaari Lounge & Skydiner offers a premium rooftop dining
+            experience with elegant ambiance, delicious cuisine,
+            and unforgettable evenings.
+        </p>
+
+    </section>
+    <section class="why-kyaari">
+    <h2>Why Choose Kyaari?</h2>
+    <div class="feature-grid">
+            
+    <div class="feature-card">
+    🌃 Rooftop Ambience
+    </div>
+
+    <div class="feature-card">
+    🍽️ Premium Dining
+    </div>
+
+    <div class="feature-card">
+    📸 Instagram Worthy Views
+    </div>
+
+    <div class="feature-card">
+    🎶 Live Music
+</div>
+</div>
+
+</section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews reveal">
+
+        <h2>Customer Reviews</h2>
+
+        <div class="review-card">
+            ⭐⭐⭐⭐⭐
+            <p>"Amazing rooftop ambience and delicious food!"</p>
+            <h4>- Rahul Sharma</h4>
+        </div>
+
+        <div class="review-card">
+            ⭐⭐⭐⭐⭐
+            <p>"Best place for family dinners and special occasions."</p>
+            <h4>- Priya Verma</h4>
+        </div>
+
+        <div class="review-card">
+            ⭐⭐⭐⭐⭐
+            <p>"Excellent service and beautiful atmosphere."</p>
+            <h4>- Aman Gupta</h4>
+        </div>
+        <section id="events" class="events">
+
+<h2>Celebrate With Us</h2>
+
+<div class="events-grid">
+
+<div class="event-card">
+    <div style="font-size:40px;">🎂</div>
+    Birthday Parties
+</div>
+
+<div class="event-card">
+    <div style="font-size:40px;">💍</div>
+    Anniversary Celebrations
+</div>
+
+<div class="event-card">
+    <div style="font-size:40px;">🏢</div>
+    Corporate Events
+</div>
+
+<div class="event-card">
+    <div style="font-size:40px;">🎉</div>
+    Private Gatherings
+</div>
+
+</div>
+
+</section>
+
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section id="booking-form" class="booking-form">
+
+        <h2>Reserve Your Table</h2>
+
+        <input type="text" id="name" placeholder="Your Name">
+
+        <input type="tel" id="phone" placeholder="Phone Number">
+
+        <input type="number" id="guests" placeholder="Number of Guests">
+
+        <input type="date" id="date">
+
+        <input type="time" id="time">
+
+        <textarea id="message"
+            placeholder="Special Request"></textarea>
+
+        <button onclick="sendBooking()">
+            Confirm Booking
+        </button>
+
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery hidden">
+
+        <h2>Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="images/hero.jpeg">
+
+            <img src="images/whatsappimage.jpeg">
+
+        </div>
+
+    </section>
+
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact hidden">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Delhi NCR</p>
+
+        <a href="https://www.instagram.com/kyaariofficial/">
+            Instagram
+        </a>
+
+        <br><br>
+
+        <a href="https://maps.app.goo.gl/Bfauq48MefAPdcmw9">
+            View on Google Maps
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Kyaari Lounge & Skydiner</p>
+    </footer>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/918448657574"
+        class="whatsapp-btn">
+        💬
+    </a>
+
+    <script src="script.js"></script>
+<section id="menu" class="menu-section">
+
+    <h2>Our Menu</h2>
+
+    <img src="images/menu-cover.jpg"
+         class="menu-cover"
+         onclick="openMenu()">
+
+</section>
+
+<div id="menuPopup" class="menu-popup">
+
+    <span class="close-btn" onclick="closeMenu()">✖</span>
+
+    <div class="menu-images">
+
+        <img src="images/menu1.jpg">
+        <img src="images/menu2.jpg">
+        <img src="images/menu3.jpg">
+        <img src="images/menu4.jpg">
+        <img src="images/menu5.jpg">
+        <img src="images/menu6.jpg">
+        <img src="images/menu7.jpg">
+        <img src="images/menu8.jpg">
+
+    </div>
+
+
+</div>
+
+</body>
+
+</html>
