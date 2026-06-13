@@ -122,6 +122,6 @@ window.addEventListener("load", ()=>{
         .getElementById("loader")
         .classList.add("hide-loader");
 
-    },3000);
+    },6000);
 
 });

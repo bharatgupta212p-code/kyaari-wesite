@@ -824,6 +824,10 @@ transform:translateY(0);
     z-index:-1;
 }
 #loader{
+    background:
+radial-gradient(circle at bottom right,
+rgba(201,164,108,0.9),
+#111 60%);
     position:fixed;
     top:0;
     left:0;
@@ -849,19 +853,30 @@ transform:translateY(0);
 }
 
 .loader-content img{
-    width:300px;
-    max-width:80%;
+    width:500px;
+    max-width:90%;
     filter:drop-shadow(0 0 30px rgba(201,164,108,0.8));
+    animation: logozoom 3s ease;
 }
 
 .loader-content p{
     color:#fff;
     margin-top:20px;
-    letter-spacing:4px;
-    font-size:22px;
-    font-weight:600;
+    letter-spacing:8px;
+    font-size:32px;
+    font-weight:700;
+    text-transform:uppercase;
 }
-
+@keyframes logoZoom{
+    0%{
+        opacity:0;
+        transform:scale(0.5);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
 .hide-loader{
     opacity:0;
     visibility:hidden;
