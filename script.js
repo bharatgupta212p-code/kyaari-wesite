@@ -114,3 +114,14 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => {
     observer.observe(el);
 });
+window.addEventListener("load", ()=>{
+
+    setTimeout(()=>{
+
+        document
+        .getElementById("loader")
+        .classList.add("hide-loader");
+
+    },3000);
+
+});
